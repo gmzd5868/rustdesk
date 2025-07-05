@@ -1004,7 +1004,8 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://admin.rustdesk.com".to_owned()
+    // 将默认API服务器从官方的 https://admin.rustdesk.com 改为自定义服务器 250705
+    "http://rust.good5.cn:21114".to_owned()
 }
 
 #[inline]
